@@ -35,7 +35,7 @@
 test:
   adapter: postgresql
   encoding: unicode
-  database: sample_app_development_test
+  database: sample_app_test
   pool: 5
   username: postgres
   password: zxcvbn
