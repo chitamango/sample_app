@@ -24,6 +24,15 @@
 #  pool: 5
  # timeout: 5000
 
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: sample_app_test
+  pool: 5
+  username: postgres
+  password: zxcvbn
+
+
  development:
   adapter: postgresql
   encoding: unicode
@@ -32,13 +41,7 @@
   username: postgres
   password: zxcvbn
 
-test:
-  adapter: postgresql
-  encoding: unicode
-  database: sample_app_test
-  pool: 5
-  username: postgres
-  password: zxcvbn
+
 
 production:
   adapter: postgresql
