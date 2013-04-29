@@ -32,15 +32,15 @@
   username: postgres
   password: zxcvbn
 
-  test:
+test:
   adapter: postgresql
   encoding: unicode
-  database: sample_app_development
+  database: sample_app_development_test
   pool: 5
   username: postgres
   password: zxcvbn
 
-  production:
+production:
   adapter: postgresql
   encoding: unicode
   database: sample_app_development
