@@ -8,8 +8,9 @@ class SessionsController < ApplicationController
 		  if user && user.authenticate(params[:session][:password])
 		    # Sign the user in and redirect to the user's show page.
 		    #sign in first then redirect
-		    sign_in user
-      		redirect_to user
+		    sign_in user #this function is in session helper
+      		#redirect_to user
+      		redirect_back_or user
 
 		  else
 		    # Create an error message and re-render the signin form.
