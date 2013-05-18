@@ -1,6 +1,7 @@
 SampleApp::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy] 
+  resources :microposts, only: [:create, :destroy]
   #we’ve restricted the actions to new, create, and destroy using the :only option accepted by resources
 
   
