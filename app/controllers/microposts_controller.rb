@@ -5,6 +5,11 @@ class MicropostsController < ApplicationController
   #check for the user has a micropost with the given id
   before_filter :correct_user,   only: :destroy
 
+
+  def index
+
+  end
+
   def create
 
   	@micropost = current_user.microposts.build(params[:micropost])
